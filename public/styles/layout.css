@@ -28,9 +28,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-main {
+main.container {
   position: relative;
     top: 80px;
+  padding: 60px 2%;
   width: 450px;
   background-color: white;
 }
