@@ -1,20 +1,29 @@
 nav#nav-bar {
   position: fixed;
+    top: 0;
+  z-index: 1;
+  padding: 0 2em;
+  height: 80px;
   width: 100%;
   color: #e8fdff;
   background-color: #00a087;
-  height: 80px;
 }
-
+/* 
 #nav-bar {
-  padding: 0px 2em;
-}
+  display: flex;
+  align-content: center;
+} */
 
 #nav-bar .logo {
   height: 80px;
   width: 80px;
+  margin-right: 10px;
+  float: left;
 }
 
 #nav-bar .header {
-
+  position: relative;
+    top: 25%;
+  font-size: 2rem;
+  float: left;
 }
