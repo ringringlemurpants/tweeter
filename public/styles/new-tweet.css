@@ -28,6 +28,16 @@ section.new-tweet form span {
   font-size: smaller;
 }
 
+/* toggleClass */
+
+.yellow {
+  color: yellow;
+}
+
+.orange {
+  color: #ff7b00;
+}
+
 .red {
   color: red;
 }
