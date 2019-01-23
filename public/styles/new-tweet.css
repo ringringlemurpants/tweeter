@@ -1,3 +1,4 @@
+/*  Compose Tweet */
 
 section.new-tweet {
   border: 1px solid lightgray;
@@ -28,14 +29,10 @@ section.new-tweet form span {
   font-size: smaller;
 }
 
-/* toggleClass */
-
-.yellow {
-  color: yellow;
-}
+/* toggle classes for counter */
 
 .orange {
-  color: #ff7b00;
+  color: #fc8311;
 }
 
 .red {
