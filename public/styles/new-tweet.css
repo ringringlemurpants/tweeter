@@ -27,3 +27,7 @@ section.new-tweet form span {
   font-style: italic;
   font-size: smaller;
 }
+
+.counter {
+  /* color: red; */
+}
