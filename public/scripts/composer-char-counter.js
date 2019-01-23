@@ -3,12 +3,9 @@ $(function() {
   $( ".tweet-input" ).keyup(function() {
     //updates number in counter
     const tweetContent = $(this).val();
-    //const currentChars = tweetContent.length;
-    // const reducedCount = 140 - currentChars;
     const reducedCount = 140 - tweetContent.length;
     $(this).siblings( ".counter" ).html(reducedCount);
-    //updates colour based on currentCount
-    console.log(tweetContent.length);
+    //changes colour of counter ".counter" on length of ".tweet-input"
     if (tweetContent.length > 139) {
       $( ".counter" ).toggleClass( "red", true);
     } else if (tweetContent.length > 129 && tweetContent.length < 140) {
@@ -20,3 +17,5 @@ $(function() {
     }
   });
 });
+
+//prevent tweet if field is above maximum? alert? maxlength on input?

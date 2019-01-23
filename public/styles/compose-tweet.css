@@ -1,6 +1,6 @@
 /*  Compose Tweet */
 
-section.new-tweet {
+section.compose-tweet {
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 10px;
@@ -9,12 +9,12 @@ section.new-tweet {
   background-color: #eee;
 }
 
-section.new-tweet h2 {
+section.compose-tweet h2 {
   border-bottom: 1px solid black;
   margin: 0 0 15px 0;
 }
 
-section.new-tweet form textarea {
+section.compose-tweet form textarea {
   padding: 5px;
   width: 100%;
   resize: vertical;
@@ -22,7 +22,7 @@ section.new-tweet form textarea {
   border: 1px solid gray;
 }
 
-section.new-tweet form span {
+.counter {
   margin: 5px 5px 15px;
   float: right;
   font-style: italic;
