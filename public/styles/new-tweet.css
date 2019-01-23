@@ -28,6 +28,6 @@ section.new-tweet form span {
   font-size: smaller;
 }
 
-.counter {
-  /* color: red; */
+.red {
+  color: red;
 }
