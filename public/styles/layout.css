@@ -29,6 +29,8 @@ body {
  */
 
 main.container {
+  display: flex;
+  justify-content: center;
   position: relative;
     top: 80px;
   padding: 60px 2%;
