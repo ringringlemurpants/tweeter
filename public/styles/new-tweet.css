@@ -4,6 +4,7 @@ section.new-tweet {
   border-radius: 5px;
   padding: 10px;
   margin: 2em;
+  width: 90%;
   background-color: #eee;
 }
 
@@ -15,6 +16,7 @@ section.new-tweet h2 {
 section.new-tweet form textarea {
   padding: 5px;
   width: 100%;
+  resize: vertical;
   background-color: white;
   border: 1px solid gray;
 }
