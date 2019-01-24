@@ -1,35 +1,34 @@
 /*  Compose Tweet */
 
-section.compose-tweet {
-  border: 1px solid lightgray;
+section#compose-tweet {
+  border: 2px solid lightgray;
   border-radius: 5px;
   padding: 10px;
   margin: 2em;
-  width: 90%;
   background-color: #eee;
 }
 
-section.compose-tweet h2 {
+section#compose-tweet h2 {
   border-bottom: 1px solid black;
   margin: 0 0 15px 0;
 }
 
-section.compose-tweet form textarea {
+section#compose-tweet form textarea {
+  border: 1px solid gray;
   padding: 5px;
   width: 100%;
   resize: vertical;
   background-color: white;
-  border: 1px solid gray;
 }
 
-.counter {
+#counter {
   margin: 5px 5px 15px;
   float: right;
   font-style: italic;
   font-size: smaller;
 }
 
-/* toggle classes for counter */
+/* ↓__ toggle classes for counter__↑ */
 
 .orange {
   color: #fc8311;

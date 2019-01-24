@@ -30,10 +30,10 @@ body {
 
 main.container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
   position: relative;
     top: 80px;
-  padding: 60px 2%;
   width: 450px;
   background-color: white;
 }
