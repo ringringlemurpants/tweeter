@@ -1,11 +1,12 @@
 $(function() {
-  //reduce "#counter" by number of characters in ".tweet-input" textarea
+  //reduce "#counter" by number of characters in "#tweet-input" textarea
   $( "#tweet-input" ).keyup(function() {
     //updates number in counter
     const tweetContent = $(this).val();
     const reducedCount = 140 - tweetContent.length;
-    $(this).siblings( "#counter" ).html(reducedCount);
-    //changes colour of counter "#counter" on length of ".tweet-input"
+    $(this).siblings( "div" ).find("#counter").html(reducedCount);
+
+    //changes colour of counter "#counter" on length of "#tweet-input"
     if (tweetContent.length > 139) {
       $( "#counter" ).toggleClass( "red", true);
     } else if (tweetContent.length > 129 && tweetContent.length < 140) {

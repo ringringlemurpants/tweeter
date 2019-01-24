@@ -5,8 +5,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-//import db from '/path/name/here.js';
-
 $(function() {
 
   const tweetData = {
@@ -20,8 +18,6 @@ $(function() {
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants" },
     "created_at": 1461116232227 };
-
-  // console.log(tweetData.user.name);
 
   function createTweetElement(object) {
     //defines variables
@@ -54,13 +50,16 @@ $(function() {
   }
 
   const $tweet = createTweetElement(tweetData);
-  console.log($tweet);
+  // console.log($tweet);
 
   $("#published-tweets").append($tweet);
 
 });
 
 //NOTES:
+
+//import db from '/path/name/here.js';
+
 // array.forEach(element => {
 
 //   return;

@@ -2,7 +2,7 @@ article.each-tweet {
   opacity: 0.75;
   border: 1px solid lightgray;
   border-radius: 5px;
-  margin: 2em;
+  margin: 1em 2em;
   background-color: #eee;
 }
 
