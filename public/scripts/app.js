@@ -46,6 +46,13 @@ $(function() {
     return $allTogetherNow;
   }
 
+  function renderTweets(tweets) {
+    // loops through tweets
+    // calls createTweetElement for each tweet
+    // takes return value and appends it to the tweets container
+
+  }
+
   const $tweet = createTweetElement(tweetData);
   console.log($tweet);
 
@@ -53,7 +60,30 @@ $(function() {
 
 });
 
+//NOTES:
+// array.forEach(element => {
 
+//   return;
+// });
+
+// return blah;
+
+
+// function getThing(key) {
+//   return this[key];
+// }
+
+// const getOtherThing = key => this[key];
+
+// const Example = {
+//   prop1: 'thing',
+//   prop2: 'spaghetti',
+//   prop3: 'spongetowels',
+//   prop4: getThing('prop1'),
+//   // prop5: getOtherThing('prop2')
+// };
+
+// console.log(Example.prop4);
 
 
 
