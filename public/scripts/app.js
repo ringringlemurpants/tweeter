@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
@@ -6,6 +6,7 @@
  */
 
 $(function() {
+
   // Fake data taken from tweets.json
   const tweetData = [
     {
@@ -62,6 +63,13 @@ $(function() {
   }
 
   function createTweetElement(tweet) {
+    //converts unix time to readable days ago format for "#time-stamp"
+    let unixTime = tweet.created_at;
+    let timeNow = Date.now();
+    let timeSince = timeNow - unixTime;
+    //maybe refactor to years and days ago?
+    let days = Math.floor(timeSince / 86400000);
+
     //defines variables
     const $eachTweet = $( "<article>" ).addClass( "each-tweet" );
     const $eachTweetHeader = $( "<header>" );
@@ -72,7 +80,7 @@ $(function() {
     const $postFieldDiv = $( "<div>" ).addClass( "post-field" );
     const $pFDivP = $( "<p>" ).text( tweet.content.text );
     const $eachTweetFooter = $( "<footer>" );
-    const $footerP = $( "<p>" ).addClass( "time-stamp" ).text( `${tweet.created_at} days ago` );
+    const $footerP = $( "<p>" ).addClass( "time-stamp" ).text( `${days} days ago` );
 
     //builds each-tweet element structure
     const $fullHeaderDiv = $( $headerDiv ).append( $headDivH2, $headDivP );
@@ -84,6 +92,7 @@ $(function() {
     return $allTogetherNow;
   }
 
+  // daysAgo(tweetData);
   renderTweets(tweetData);
 });
 
