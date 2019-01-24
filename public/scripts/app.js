@@ -1,3 +1,4 @@
+// "use strict";
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
@@ -6,28 +7,49 @@
 
 //import db from '/path/name/here.js';
 
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": {
-      "small":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
-      "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
-      "large":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
-    },
-    "handle": "@SirIsaac"
-  },
-  "content": {
-    "text": "If I have seen further it is by standing on the shoulders of giants"
-  },
-  "created_at": 1461116232227
-};
-
-console.log(tweetData);
-
 $(function() {
 
-  function createTweetElement() {
-    $();
+  const tweetData = {
+    "user": {
+      "name": "Newton",
+      "avatars": {
+        "small":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
+        "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
+        "large":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
+      },
+      "handle": "@SirIsaac"
+    },
+    "content": {
+      "text": "If I have seen further it is by standing on the shoulders of giants"
+    },
+    "created_at": 1461116232227
+  };
+
+  function createTweetElement(object) {
+    const $eachTweet = $( "<article>" ).addClass( "each-tweet" );
+    const $eachTweetHeader = $( "<header>" );
+    const $headerImg = $( "<img/>" ).attr( "src", "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png" );
+    const $headerDiv = $( "<div>" ).addClass( "user-info" );
+    const $headDivH2 = $( "<h2>" );
+    const $headDivP = $( "<p>" );
+    const $postFieldDiv = $( "<div>" ).addClass( "post-field" );
+    const $pFDivP = $( "<p>" );
+    const $eachTweetFooter = $( "<footer>" );
+    const $footerP = $( "<p>" ).addClass( "time-stamp" );
+
+    return $allTogetherNow;
   }
 
+  const $tweet = createTweetElement(tweetData);
+  console.log($tweet);
+
+  $("#published-tweets").append($tweet);
+
 });
+
+
+
+
+
+
+

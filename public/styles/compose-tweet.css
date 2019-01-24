@@ -1,7 +1,7 @@
 /*  Compose Tweet */
 
 section#compose-tweet {
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 5px;
   padding: 10px;
   margin: 2em;

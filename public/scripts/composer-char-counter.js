@@ -18,4 +18,4 @@ $(function() {
   });
 });
 
-//prevent tweet if field is above maximum? alert? maxlength on input?
+//prevent tweet if field is above maximum. alert?
