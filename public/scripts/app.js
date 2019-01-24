@@ -92,37 +92,8 @@ $(function() {
     return $allTogetherNow;
   }
 
-  // daysAgo(tweetData);
   renderTweets(tweetData);
 });
-
-//NOTES:
-
-//import db from '/path/name/here.js';
-
-// array.forEach(element => {
-
-//   return;
-// });
-
-// return blah;
-
-
-// function getThing(key) {
-//   return this[key];
-// }
-
-// const getOtherThing = key => this[key];
-
-// const Example = {
-//   prop1: 'thing',
-//   prop2: 'spaghetti',
-//   prop3: 'spongetowels',
-//   prop4: getThing('prop1'),
-//   // prop5: getOtherThing('prop2')
-// };
-
-// console.log(Example.prop4);
 
 
 
