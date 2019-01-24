@@ -26,6 +26,7 @@ $(function() {
   };
 
   function createTweetElement(object) {
+    //defines variables
     const $eachTweet = $( "<article>" ).addClass( "each-tweet" );
     const $eachTweetHeader = $( "<header>" );
     const $headerImg = $( "<img/>" ).attr( "src", "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png" );
@@ -36,6 +37,12 @@ $(function() {
     const $pFDivP = $( "<p>" );
     const $eachTweetFooter = $( "<footer>" );
     const $footerP = $( "<p>" ).addClass( "time-stamp" );
+    //builds each-tweet element structure
+    const $fullHeaderDiv = $( $headerDiv ).append( $headDivH2, $headDivP );
+    const $finishedHeader = $( $eachTweetHeader ).append( $headerImg, $fullHeaderDiv );
+    const $finishedPostFieldDiv = $( $postFieldDiv ).append( $pFDivP );
+    const $finishedFooter = $( $eachTweetFooter ).append( $footerP );
+    const $allTogetherNow = $( $eachTweet ).append( $finishedHeader, $finishedPostFieldDiv, $finishedFooter );
 
     return $allTogetherNow;
   }
