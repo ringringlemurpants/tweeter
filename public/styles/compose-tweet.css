@@ -21,8 +21,20 @@ section#compose-tweet form textarea {
   background-color: white;
 }
 
+section#compose-tweet form div {
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+section#compose-tweet form input {
+  border-radius: 5px;
+  height: 25px;
+}
+
 #counter {
-  margin: 5px 5px 15px;
+  /* margin: 5px 5px 15px; */
   float: right;
   font-style: italic;
   font-size: smaller;

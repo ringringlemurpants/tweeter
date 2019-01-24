@@ -45,10 +45,11 @@
 
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
-          <!-- maybe add maxlength="140"? -->
           <textarea id="tweet-input" name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
-          <span id="counter">140</span>
+          <div>
+            <input type="submit" value="Tweet">
+            <span id="counter">140</span>
+          </div>
         </form>
 
       </section>
@@ -68,10 +69,10 @@
             </div>
             <footer>
               <p class="time-stamp"> 10 days ago</p>
-              <div class="icons">
+              <!-- <div class="icons"> -->
                 <!-- <a href="#">↻</a> -->
 
-              </div>
+              <!-- </div> -->
             </footer>
         </article>
 
