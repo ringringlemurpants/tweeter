@@ -22,22 +22,24 @@ $(function() {
 
   $( "form" ).submit(function(event){
     event.preventDefault();
-    const tweet = $(this).children( "#tweet-input" );
-    const tweetOut = tweet.val();
-    const tweetOutSerial = tweet.serialize();
+    const $tweet = $(this).children( "#tweet-input" );
+    let $tweetOut = $tweet.val();
+    const $tweetOutSerial = $tweet.serialize();
 
-    if (tweetOut.length > 140) {
+    if ($tweetOut.length > 140) {
       alert( "Twort-abort: twits tweet too long!" );
-    } else if (tweetOut.length < 1) {
+    } else if ($tweetOut.length < 1) {
       alert( "You must enter a tweet to twort you twit!" );
     } else {
       $.ajax({
         method: "POST",
         url: "/tweets",
-        data: tweetOutSerial
+        data: $tweetOutSerial
       })
         .done(function(){
           loadTweets();
+          $tweetOut = $tweet.val("");
+          $( "#counter" ).html( "140" );
         })
         .fail(function() {
           alert( "Fail." );
