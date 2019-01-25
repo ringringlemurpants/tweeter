@@ -4,8 +4,8 @@ section#compose-tweet {
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 10px;
-  margin: 2em;
-  background-color: #eee;
+  margin: 1em 2em 0;
+  background-color: #eee; 
 }
 
 section#compose-tweet h2 {
@@ -31,6 +31,7 @@ section#compose-tweet form div {
 section#compose-tweet form input {
   border-radius: 5px;
   height: 25px;
+  cursor: pointer;
 }
 
 #counter {
@@ -40,7 +41,7 @@ section#compose-tweet form input {
   font-size: smaller;
 }
 
-/* ↓__ toggle classes for counter__↑ */
+/* __ toggle classes__ */
 
 .orange {
   color: #fc8311;
@@ -48,4 +49,8 @@ section#compose-tweet form input {
 
 .red {
   color: red;
+}
+
+.hidden {
+  display: none;
 }

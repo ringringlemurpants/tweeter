@@ -18,7 +18,19 @@ $(function() {
       });
   }
 
-  loadTweets()
+  loadTweets();
+
+  $( "#compose-btn" ).click(function () {
+    if ( $( "#compose-tweet" ).hasClass( "hidden" ) ) {
+    $( "#compose-tweet" ).slideDown( "slow" );
+    $( "#tweet-input" ).focus();
+    $( "#compose-tweet" ).removeClass( "hidden" );
+  } else {
+      $( "#compose-tweet" ).slideUp( "slow" );
+      $( "#compose-tweet" ).addClass( "hidden" );
+    }
+  });
+
 
   $( "form" ).submit(function(event){
     event.preventDefault();

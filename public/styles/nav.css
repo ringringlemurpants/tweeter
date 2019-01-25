@@ -8,11 +8,7 @@ nav#nav-bar {
   color: #e8fdff;
   background-color: #00a087;
 }
-/*
-#nav-bar {
-  display: flex;
-  align-content: center;
-} */
+
 #nav-bar .logo {
   height: 80px;
   width: 80px;
@@ -39,6 +35,23 @@ nav#nav-bar {
 #nav-bar #compose-btn:hover {
   opacity: 1;
   color: #244751;
+  cursor: pointer;
 }
 
 /* ↓__ toggle classes for #compose-btn__↑ */
+
+.slide-down {
+  /* animation-duration: 3s;
+  animation-name: slidein; */
+}
+  /* @keyframes slidein {
+    from {
+      margin-bottom: 100%;
+      width: 100%; 
+    }
+
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  } */
