@@ -1,4 +1,5 @@
 $(function() {
+
   //reduce "#counter" by number of characters in "#tweet-input" textarea
   $( "#tweet-input" ).keyup(function() {
     //updates number in counter
