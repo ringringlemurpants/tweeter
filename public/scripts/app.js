@@ -31,17 +31,19 @@ $(function() {
     }
   });
 
-
   $( "form" ).submit(function(event){
+    $( ".error" ).hide();
     event.preventDefault();
     const $tweet = $(this).children( "#tweet-input" );
     let $tweetOut = $tweet.val();
     const $tweetOutSerial = $tweet.serialize();
 
     if ($tweetOut.length > 140) {
-      alert( "Twort-abort: twits tweet too long!" );
+      $( ".error > p" ).text("Twort-aborted: fix your tweet you twit! You're flapping your gums too much.");
+      $( ".error" ).slideDown( "fast" );
     } else if ($tweetOut.length < 1) {
-      alert( "You must enter a tweet to twort you twit!" );
+      $( ".error > p" ).text("Only twits don't twort. You must enter a tweet to tweeter. Peck away!");
+      $( ".error" ).slideDown( "fast" );
     } else {
       $.ajax({
         method: "POST",

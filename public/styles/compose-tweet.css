@@ -35,11 +35,24 @@ section#compose-tweet form input {
 }
 
 #counter {
-  /* margin: 5px 5px 15px; */
   float: right;
   font-style: italic;
   font-size: smaller;
 }
+/* -- Errors -- */
+
+.error {
+  border: 3px outset #d80e0e;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 1em 2em 0;
+  background-color: white;
+}
+
+.error p {
+  margin: 0;
+}
+
 
 /* __ toggle classes__ */
 
