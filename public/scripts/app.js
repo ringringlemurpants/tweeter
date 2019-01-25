@@ -68,7 +68,7 @@ $(function() {
     let timeNow = Date.now();
     let timeSince = timeNow - unixTime;
     //maybe refactor to years and days ago?
-    let days = Math.floor(timeSince / 86400000);
+    let day = Math.floor(timeSince / 86400000);
 
     //defines variables
     const $eachTweet = $( "<article>" ).addClass( "each-tweet" );
@@ -80,7 +80,7 @@ $(function() {
     const $postFieldDiv = $( "<div>" ).addClass( "post-field" );
     const $pFDivP = $( "<p>" ).text( tweet.content.text );
     const $eachTweetFooter = $( "<footer>" );
-    const $footerP = $( "<p>" ).addClass( "time-stamp" ).text( `${days} days ago` );
+    const $footerP = $( "<p>" ).addClass( "time-stamp" ).text( `tweeted ${day} days ago` );
 
     //builds each-tweet element structure
     const $fullHeaderDiv = $( $headerDiv ).append( $headDivH2, $headDivP );
@@ -94,8 +94,4 @@ $(function() {
 
   renderTweets(tweetData);
 });
-
-
-
-
 
