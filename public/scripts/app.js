@@ -39,7 +39,7 @@ $(function() {
         .done(function(){
           loadTweets();
           $tweetOut = $tweet.val("");
-          $( "#counter" ).html( "140" );
+          $( "#counter" ).text( "140" );
         })
         .fail(function() {
           alert( "Fail." );

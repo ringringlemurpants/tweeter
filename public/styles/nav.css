@@ -8,13 +8,11 @@ nav#nav-bar {
   color: #e8fdff;
   background-color: #00a087;
 }
-
 /*
 #nav-bar {
   display: flex;
   align-content: center;
 } */
-
 #nav-bar .logo {
   height: 80px;
   width: 80px;
@@ -27,3 +25,20 @@ nav#nav-bar {
   font-size: 2rem;
   float: left;
 }
+
+#nav-bar #compose-btn {
+  opacity: 0.75;
+  float: right;
+  color: #00a087;
+  margin: 10px;
+  height: 70%;
+  border: 1px solid #244751;;
+  border-radius: 5px;
+}
+
+#nav-bar #compose-btn:hover {
+  opacity: 1;
+  color: #244751;
+}
+
+/* ↓__ toggle classes for #compose-btn__↑ */

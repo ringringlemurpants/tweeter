@@ -5,7 +5,7 @@ $(function() {
     //updates number in counter
     const tweetContent = $(this).val();
     const reducedCount = 140 - tweetContent.length;
-    $(this).siblings( "div" ).find("#counter").html(reducedCount);
+    $(this).siblings( "div" ).find("#counter").text(reducedCount);
 
     //changes colour of counter "#counter" on length of "#tweet-input"
     if (tweetContent.length > 139) {
