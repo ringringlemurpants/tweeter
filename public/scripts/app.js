@@ -32,18 +32,22 @@ $(function() {
   });
 
   $( "form" ).submit(function(event){
-    $( ".error" ).hide();
+    $( ".error" ).slideUp( "fast" );
     event.preventDefault();
     const $tweet = $(this).children( "#tweet-input" );
     let $tweetOut = $tweet.val();
     const $tweetOutSerial = $tweet.serialize();
 
     if ($tweetOut.length > 140) {
-      $( ".error > p" ).text("Twort-aborted: fix your tweet you twit! You're flapping your gums too much.");
-      $( ".error" ).slideDown( "fast" );
+      $( ".error > p" ).text("");
+      $( ".error" ).slideDown( "slow", function() {
+        $( ".error > p" ).text( "Twort-aborted: fix your tweet you twit! You're flapping your gums too much." );
+      });
     } else if ($tweetOut.length < 1) {
-      $( ".error > p" ).text("Only twits don't twort. You must enter a tweet to tweeter. Peck away!");
-      $( ".error" ).slideDown( "fast" );
+      $( ".error > p" ).text("");
+      $( ".error" ).slideDown( "slow", function() {
+        $( ".error > p" ).text( "Only twits don't twort. You must enter a tweet to tweeter. Peck away!" );
+      });
     } else {
       $.ajax({
         method: "POST",
