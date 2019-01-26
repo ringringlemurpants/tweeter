@@ -23,7 +23,7 @@ nav#nav-bar {
 }
 
 #nav-bar #compose-btn {
-  opacity: 0.75;
+  opacity: 0.85;
   float: right;
   color: #00a087;
   margin: 10px;
@@ -31,11 +31,13 @@ nav#nav-bar {
   height: 70%;
   border: 1px solid #244751;;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 #nav-bar #compose-btn:hover {
+  /* font-weight: bold; */
   opacity: 1;
   color: #244751;
   cursor: pointer;
-  box-shadow: 0 0 10px #007e6b;
+  box-shadow: 0 0 10px #006d5d;
 }

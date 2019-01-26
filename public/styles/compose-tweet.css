@@ -32,6 +32,10 @@ section#compose-tweet form input {
   border-radius: 5px;
   height: 25px;
   cursor: pointer;
+  transition: 0.3s;
+}
+section#compose-tweet form input:hover {
+  box-shadow: 0 0 5px #95aca8;
 }
 
 #counter {
