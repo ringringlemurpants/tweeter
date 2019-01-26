@@ -3,6 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
 html {
   margin: 0;
   box-sizing: border-box;
@@ -38,3 +39,4 @@ main.container {
   background-color: white;
   box-shadow: 0 0 10px #c4c4c4;
 }
+

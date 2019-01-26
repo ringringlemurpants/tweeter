@@ -14,6 +14,7 @@ nav#nav-bar {
   width: 80px;
   margin-right: 10px;
   float: left;
+  transition: 0.3s
 }
 
 #nav-bar .header {
@@ -35,7 +36,6 @@ nav#nav-bar {
 }
 
 #nav-bar #compose-btn:hover {
-  /* font-weight: bold; */
   opacity: 1;
   color: #244751;
   cursor: pointer;

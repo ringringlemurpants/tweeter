@@ -5,7 +5,7 @@ section#compose-tweet {
   border-radius: 5px;
   padding: 10px;
   margin: 1em 2em 0;
-  background-color: #eee; 
+  background-color: #eee;
 }
 
 section#compose-tweet h2 {
@@ -22,7 +22,7 @@ section#compose-tweet form textarea {
 }
 
 section#compose-tweet form div {
-  margin-right: 5px;
+  margin: 5px 5px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -34,6 +34,7 @@ section#compose-tweet form input {
   cursor: pointer;
   transition: 0.3s;
 }
+
 section#compose-tweet form input:hover {
   box-shadow: 0 0 5px #95aca8;
 }
@@ -43,7 +44,8 @@ section#compose-tweet form input:hover {
   font-style: italic;
   font-size: smaller;
 }
-/* -- Errors -- */
+
+/* -- Error messages -- */
 
 .error {
   height: 64px;
