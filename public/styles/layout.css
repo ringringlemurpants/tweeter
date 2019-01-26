@@ -36,4 +36,5 @@ main.container {
     top: 80px;
   width: 450px;
   background-color: white;
+  box-shadow: 0 0 10px #c4c4c4;
 }

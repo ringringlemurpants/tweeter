@@ -27,6 +27,7 @@ nav#nav-bar {
   float: right;
   color: #00a087;
   margin: 10px;
+  padding: 0 20px;
   height: 70%;
   border: 1px solid #244751;;
   border-radius: 5px;
@@ -36,4 +37,5 @@ nav#nav-bar {
   opacity: 1;
   color: #244751;
   cursor: pointer;
+  box-shadow: 0 0 10px #007e6b;
 }
