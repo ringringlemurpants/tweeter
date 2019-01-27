@@ -2,14 +2,28 @@
 
 Tweeter is a simple, single-page Twitter clone, the second project for the Lighthouse Labs web development bootcamp. This is the first full stack app, using Node, Express and MongoDB in the back-end and HTML, CSS, JS, jQuery and AJAX front-end technologies.
 
-## Getting Started
+## Features
+
+- Hover effects
+- Colour changing character counter
+- Animated error messages
+- Responsive design with flexbox and media queries
+
+## Examples
+
+![Tweeting](public/images/Tweeting_big.gif)
+![Error messages](public/images/Error_big.gif)
+![Resizing](public/images/Resize-me-bigger.gif)
+
+
+#### Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
-## Dependencies
+##### Dependencies
 
 - Body-parser
 - Chance
