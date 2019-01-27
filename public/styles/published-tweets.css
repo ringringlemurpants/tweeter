@@ -1,3 +1,5 @@
+/* Published Tweets */
+
 article.each-tweet {
   opacity: 0.75;
   border: 1px solid lightgray;
@@ -61,5 +63,5 @@ article.each-tweet:hover {
 }
 
 p.time-stamp {
-  font-size: small;
+  font-size: smaller;
 }

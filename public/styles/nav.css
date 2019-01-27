@@ -1,4 +1,4 @@
-nav#nav-bar {
+#nav-bar {
   position: fixed;
     top: 0;
   z-index: 1;
@@ -7,30 +7,34 @@ nav#nav-bar {
   width: 100%;
   color: #e8fdff;
   background-color: #00a087;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+#nav-bar .left {
+  display: flex;
+  align-items: center;
 }
 
 #nav-bar .logo {
   height: 80px;
   width: 80px;
   margin-right: 10px;
-  float: left;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 #nav-bar .header {
-  margin-top: 30px;
-  font-size: 2rem;
-  float: left;
+  font-size: 2em;
 }
 
 #nav-bar #compose-btn {
   opacity: 0.85;
-  float: right;
   color: #00a087;
-  margin: 10px;
   padding: 0 20px;
   height: 70%;
-  border: 1px solid #244751;;
+  border: 1px solid #244751;
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -39,5 +43,30 @@ nav#nav-bar {
   opacity: 1;
   color: #244751;
   cursor: pointer;
-  box-shadow: 0 0 10px #006d5d;
+  box-shadow: 0 0 1em #006d5d;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  #nav-bar {
+    padding: 0 1em;
+  }
+
+  #nav-bar #compose-btn {
+    height: 50%;
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 299px) {
+
+  #nav-bar {
+    padding: 0 0.5em;
+  }
+
+  #nav-bar #compose-btn {
+    height: 40%;
+    padding: 0 .5em;
+    margin-left: 1em;
+    font-size: x-small;
+  }
 }

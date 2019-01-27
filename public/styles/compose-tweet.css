@@ -19,6 +19,7 @@ section#compose-tweet form textarea {
   width: 100%;
   resize: vertical;
   background-color: white;
+  border-radius: 5px;
 }
 
 section#compose-tweet form div {
@@ -59,7 +60,6 @@ section#compose-tweet form input:hover {
 .error p {
   margin: 0;
 }
-
 
 /* __ toggle classes__ */
 
